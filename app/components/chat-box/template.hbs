@@ -1,0 +1,20 @@
+ <title>ratatouille</title>
+
+  <div>
+    <ul class="message-list">
+      {{#each messages as |message|}}
+          <li>{{message.message}}</li>
+      {{/each}}
+    </ul>
+  </div>
+
+ <div>
+   <form action="">
+     <textarea name="messagebox" id="" cols="30" rows="2"></textarea>
+     <button {{action "submitMessage"}}>Submit</button>
+   </form>
+
+ </div>
+
+
+
