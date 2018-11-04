@@ -1,8 +1,58 @@
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
 .navbar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: honeydew;
+  background-color: cadetblue;
   width: 100%;
   height: 50px;
+}
+
+.nav-link {
+  z-index: 2;
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: white;
+  padding: 5px 10px;
+  height: 100%;
+}
+
+.nav-link:hover {
+  background-color: lightsalmon;
+  color: white;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: moccasin;
+}
+
+.menu-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 150px;
+  background-color: bisque;
+  border: solid black 1px;
+  box-sizing: border-box;
+}
+
+.add {
+  background-color: beige;
+}
+
+.mi-labels {
+}
+.mi-display {
 }

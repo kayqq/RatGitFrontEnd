@@ -1,12 +1,14 @@
 {{outlet}}
+<div class="menu-list">
 
-{{#each items as |item|}}
-{{menu-item
-name=item.name
-price=item.price
-numOfOrders=item.numOfOrders
-image=item.image
-ingredients=item.ingredients
-foodAllergies=item.food_allergies
-}}
-{{/each}}
+    {{#each items as |item|}}
+    {{menu-item
+    name=item.name
+    price=item.price
+    numOfOrders=item.numOfOrders
+    image=item.image
+    ingredients=item.ingredients
+    foodAllergies=item.food_allergies
+    }}
+    {{/each}}
+</div>
