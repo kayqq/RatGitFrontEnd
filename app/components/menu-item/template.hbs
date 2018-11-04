@@ -1,26 +1,11 @@
-{{!-- MENU-ITEM MODEL
-{
-name: taco,
-price: $2.50,
-numOfOrders: 20,
-ingredients: [
-'meat',
-'cheese',
-'lettuce'
-],
-food_allergies: [
-dairy
-],
-picture: 'img.com'
-} --}}
 <div class="menu-item">
     <div class="mi-img">IMAGE</div>
     <div class="mi-labels">{{name}}</div>
     <div class="mi-labels"># of Orders</div>
-    <div class="mi-display">400</div>
+    <div class="mi-display">{{numOfOrders}}</div>
     <div class="mi-display">{{price}}</div>
     <div class="mi-labels">Ingredients: </div>
-    <div class="mi-ingredients">meat, cheese, lettuce</div>
+    <div class="mi-ingredients">{{ingredients}}</div>
     <div class="mi-labels">Food Allergies: </div>
-    <div class="mi-ingredients">dairy</div>
+    <div class="mi-ingredients">{{foodAllergies}}</div>
 </div>

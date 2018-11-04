@@ -1,0 +1,13 @@
+{{yield}}
+
+<div class="menu-item-add">
+    {{#if isExpanded}}
+    <button {{action 'contractItemAdd'}}>Close</button>
+    {{else}}
+    <button {{action 'expandItemAdd'}}>Add</button>
+    {{/if}}
+</div>
+
+{{#if isExpanded}}
+<div>MENU-ADD-SETTINGS</div>
+{{/if}}
