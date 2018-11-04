@@ -1,5 +1,5 @@
 <div class="menu-item">
-    <div class="mi-img">IMAGE</div>
+    {{!-- <div class="mi-img">IMAGE</div>
     <div class="mi-labels">{{name}}</div>
     <div class="mi-labels"># of Orders</div>
     <div class="mi-display">{{numOfOrders}}</div>
@@ -7,5 +7,45 @@
     <div class="mi-labels">Ingredients: </div>
     <div class="mi-ingredients">{{ingredients}}</div>
     <div class="mi-labels">Food Allergies: </div>
-    <div class="mi-ingredients">{{foodAllergies}}</div>
+    <div class="mi-ingredients">{{foodAllergies}}</div> --}}
+
+    <div class="menu-item-a">
+        <div class="menu-item-img">
+            <span>IMAGE</span>
+        </div>
+
+        <div class="menu-item-info name">
+            <div class="menu-item-data">
+                {{name}}
+            </div>
+        </div>
+
+        <div class="menu-item-info rating">
+            <div class="menu-item-data">
+                *****
+            </div>
+        </div>
+
+        <div class="menu-item-info numorders">
+            <div class="menu-item-data">
+                {{numOfOrders}}
+            </div>
+        </div>
+
+        <div class="menu-item-info price">
+            <div class="menu-item-data">
+                {{price}}
+            </div>
+        </div>
+
+    </div>
+    <div class="menu-item-b">
+        <div class="menu-item-info descrip">
+            <div class="menu-item-data">
+                *Description here*
+            </div>
+        </div>
+    </div>
+
+
 </div>

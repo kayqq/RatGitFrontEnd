@@ -1,6 +1,6 @@
 {{yield}}
 
-<div class="menu-item-add">
+<div>
     {{#if isExpanded}}
     <button {{action 'contractItemAdd'}}>Close</button>
     {{else}}
@@ -9,15 +9,44 @@
 </div>
 
 {{#if isExpanded}}
-<div class="menu-item add">
-    <div class="mi-img">IMAGE</div>
-    <div>BROWSE FILES</div>
-    <input class="" placeholder="name" />
-    <input class="" placeholder="price" />
-    <div>ingredient1</div>
-    <div>ingredient2</div>
-    <div>ingredient3</div>
+<div class="menu-add">
 
-    <input class="" placeholder="ingredient" />
+    <div class="menu-add-module">
+        <div class="menu-add-label">
+            <span>Menu Item</span>
+            <input class="menu-add-input" placeholder="Add menu item name" />
+        </div>
+    </div>
+
+    <div class="menu-add-module">
+        <div class="menu-add-label">
+            <span>Price</span>
+            <input class="menu-add-input" placeholder="Add price" />
+        </div>
+    </div>
+
+    <div class="menu-add-module">
+        <div class="menu-add-label">
+            <span>Description</span>
+            <input class="menu-add-input" placeholder="Add Description" />
+        </div>
+    </div>
+
+    <div class="menu-add-module">
+        <div class="menu-add-label">
+            <span>Ingredients</span>
+            <input class="menu-add-input" placeholder="Add Ingredients" />
+        </div>
+    </div>
+
+    <div class="menu-add-module upload">
+        <div class="upload-area">
+            <div>
+                UPLOAD
+            </div>
+        </div>
+        <div class="upload-delete"><button>DELETE</button></div>
+    </div>
+
 </div>
 {{/if}}
