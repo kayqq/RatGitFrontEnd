@@ -1,0 +1,23 @@
+{{yield}}
+
+<div class="menu-item-add">
+    {{#if isExpanded}}
+    <button {{action 'contractItemAdd'}}>Close</button>
+    {{else}}
+    <button {{action 'expandItemAdd'}}>Add</button>
+    {{/if}}
+</div>
+
+{{#if isExpanded}}
+<div class="menu-item">
+    <div class="mi-img">IMAGE</div>
+    <div>BROWSE FILES</div>
+    <input class="" placeholder="name" />
+    <input class="" placeholder="price" />
+    <div>ingredient1</div>
+    <div>ingredient2</div>
+    <div>ingredient3</div>
+
+    <input class="" placeholder="ingredient" />
+</div>
+{{/if}}
