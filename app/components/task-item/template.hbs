@@ -1,0 +1,13 @@
+<h2>Task-List</h2>
+<div>
+<ul class="task-list">
+{{#each taskItems as |task|}}
+  <li> {{task.task}} </li>
+{{/each}}
+</ul>
+</div>
+
+<div>
+  <textarea name="taskBox" id="" cols="30" rows="2"></textarea>
+  <button {{action "submitTask"}}>Submit</button>
+</div>
